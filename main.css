@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-   
+    scroll-behavior: smooth;
 }
 .header {
     font-family: 'DM Serif Text', serif;
@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     box-shadow: 5px 5px 40px;
+    z-index: 100000000000000000000000;
 }
 .nav {
     display: flex;
@@ -92,33 +93,81 @@ h1{
     animation-timing-function: linear;
     transform-origin: center;
 }
-.section02{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)), url(resources/roses.jpg);
-    height: 1000px;
-    width: 100%;
-    font-family: 'DM Serif Text', serif;
-    display: flex;
-}
-.botton-sec2{
+.botton-section-02{
     width: 100px;
     height: 100px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background: #000000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -50px;
 }
-
-@media (max-width: 768px){
+.button-sec2{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button-sec2 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.section02{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)), url(resources/roses.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    font-family: 'Berkshire Swash', cursive;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.presentation{
+    text-align: center;
+    margin-top: 200px;
+}
+.section02 img {
+    height: 350px;
+    width: 300px;
+}
+h3{
+    margin-top: 10px;
+    font-size: 80px;
+    color: #ff43437a;
+    text-align: center;
+    font-weight: lighter;
+}
+.section02 p {
+    margin-top: 100px;
+    height: 470px;
+    width: 450px;
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+}
+@media (max-width: 1280px){
     .nav-menu {
         flex-direction: column;
-        background-color: rgb(46, 46, 46);
+        background-color: rgba(46, 46, 46, 0.829);
+        backdrop-filter: blur(10px);
         position: fixed;
         left: 0;
         top: 50px;
         width: 100%;
         align-items: center;
         padding: 20px 0;
-        height: calc(100%);
+        height: 100%;
         overflow-y: auto;
         left: 100%;
         transition: 0.3s;
@@ -130,10 +179,10 @@ h1{
         left: 0;
     }
     .nav-menu-item{
-        margin-top:30px;
+        margin-top:50px;
     }
 }
-@media (min-width: 768px){
+@media (min-width: 1280px){
     .section01{
         height: auto;
         width: 100%;
@@ -162,7 +211,7 @@ h1{
         margin-left: 10px;
         margin-top: 10px;
         animation-name: beatheart;
-        animation-duration: 0.3s;
+        animation-duration: 0.5s;
         animation-direction: alternate;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
@@ -174,6 +223,29 @@ h1{
         to {height: 30px;
             width: 30px;}
       }
-    .nicolas-black{
+      .section02{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .presentation{
+        margin-top: 100px;
+        margin-right: 50px;
+    }
+    .section02 img {
+        height: 550px;
+        width: 500px;
+        margin-left: 50px;
+    }
+    h3{
+        margin-top: 10px;
+        font-size: 120px;
+        text-align: right;
+    }
+    .section02 p {
+        margin-top:50px;
+        height: 470px;
+        width: 550px;
+        text-align: right;
+        font-size: 35px;
     }
 }
