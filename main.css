@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+   
 }
 .header {
     font-family: 'DM Serif Text', serif;
@@ -10,6 +11,7 @@
     width: 100%;
     top: 0;
     left: 0;
+    box-shadow: 5px 5px 40px;
 }
 .nav {
     display: flex;
@@ -50,6 +52,61 @@
     line-height: 50px;
     display: none;
 }
+.section01{
+    background-color:#be0d0d;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'DM Serif Text', serif;
+}
+.nametitle{
+    text-align: center;
+    margin-top: 100px;
+}
+h1{
+    font-size: 60px;
+    font-weight: lighter;
+    color: #BEB7A4;
+    line-height: 70%;
+}
+.subtitle{
+    margin-top: 20px;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    color: #BEB7A4;
+    margin-bottom: 40px;
+}
+.subtitle img {
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    animation-name: beatheart;
+    animation-duration: 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: center;
+}
+.section02{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)), url(resources/roses.jpg);
+    height: 1000px;
+    width: 100%;
+    font-family: 'DM Serif Text', serif;
+    display: flex;
+}
+.botton-sec2{
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #000000;
+}
 
 @media (max-width: 768px){
     .nav-menu {
@@ -61,7 +118,7 @@
         width: 100%;
         align-items: center;
         padding: 20px 0;
-        height: calc(100% - 150px);
+        height: calc(100%);
         overflow-y: auto;
         left: 100%;
         transition: 0.3s;
@@ -74,5 +131,49 @@
     }
     .nav-menu-item{
         margin-top:30px;
+    }
+}
+@media (min-width: 768px){
+    .section01{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+    .nametitle{
+        text-align: left;
+        margin-left: 100px;
+    }
+    h1{
+        font-size: 120px;
+        color: #BEB7A4;
+    }
+    .subtitle{
+        margin-top: 20px;
+        font-size: 24px;
+        justify-content: center;
+        text-align: left;
+    }
+    .subtitle img {
+        height: 40px;
+        width: 40px;
+        margin-left: 10px;
+        margin-top: 10px;
+        animation-name: beatheart;
+        animation-duration: 0.3s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        transform-origin: center;
+    }
+    @keyframes beatheart {
+        from {height: 35px;
+            width: 35px;}
+        to {height: 30px;
+            width: 30px;}
+      }
+    .nicolas-black{
     }
 }
