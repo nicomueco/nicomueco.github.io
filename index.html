@@ -44,9 +44,9 @@
             <a href="#presentation"><i class="fa-solid fa-arrow-down"></i></a>
         </button>
        </div>
-    <section class="section02">
+    <section class="section02" id="presentation">
         <img src="resources/polaroid.png" alt="polaroidnicolas">
-        <div class="presentation" id="presentation">
+        <div class="presentation">
             <h3>What’s Up?</h3>
             <p>Hi I’m Nicolas👋 a boy with knowledge in mathematics, statistics and data science, passionate about everything especially Python and R especially in the results that can be reached.</p>
         </div>
@@ -55,13 +55,13 @@
            <p class="text-studied-p">I have studied in</p>
        </div>
     <section class="section03">
-        <script defer src="carrousel.js"></script>
+        <script src="carrousel.js"></script>
         <div class="button-after">
-           <button><i class="fa-solid fa-arrow-left"></i></button>
+           <button onclick="ChangeImageBack()"><i class="fa-solid fa-arrow-left"></i></button>
         </div>
-            <img src="resources/Udistrital.png" alt="Lugares Donde Estudio Nicolas Aranguren">
+            <img src="resources/Udistrital.png" alt="Lugares Donde Estudio Nicolas Aranguren" id="ButtonSection03">
         <div class="button-before">
-           <button><i class="fa-solid fa-arrow-right"></i></button>
+           <button onclick="ChangeImage()"><i class="fa-solid fa-arrow-right"></i></button>
         </div>    
     </section>
 </body>
