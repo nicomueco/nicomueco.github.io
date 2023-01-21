@@ -149,11 +149,12 @@ h3{
     font-weight: lighter;
 }
 .section02 p {
-    margin-top: 60px;
+    margin-top: 50px;
     height: 350px;
     width: 450px;
     text-align: center;
     font-size: 30px;
+    font-family: 'DM Serif Text', serif;
     color: whitesmoke;
 }
 .text-studied{
@@ -289,6 +290,30 @@ h3{
     background-color: #9CD300;
     border-radius: 30px;
 }
+
+#progress01{
+    width: 95%;
+}
+#progress02{
+    width: 88%;
+}
+#progress03{
+    width: 90%;
+}
+#progress04{
+    width: 90%;
+}
+#progress05{
+    width: 90%;
+}
+#progress06{
+    width: 90%;
+}
+#progress07{
+    width: 90%;
+}
+
+
 .sectionContact {
     width: 100%;
     height: auto;
@@ -301,6 +326,7 @@ h3{
     margin-top: 100px;
     text-align: center;
     color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
 }
 .form {
     display: flex;

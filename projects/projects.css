@@ -53,6 +53,23 @@
     line-height: 50px;
     display: none;
 }
+
+.projects {
+    width: auto;
+    height: auto;
+    background: linear-gradient(#F50909, #660101);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+h2{
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 80px;
+    font-weight: lighter;
+    background-image: url(../resources/roses.jpg);
+    color: #0000007e;
+    -webkit-background-clip: text;
+}
 .sectionContact {
     width: 100%;
     height: auto;
@@ -65,6 +82,9 @@
     margin-top: 100px;
     text-align: center;
     color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    font-weight: lighter;
 }
 .form {
     display: flex;
@@ -196,5 +216,11 @@ footer p{
 @media (min-width: 1280px){
 .form-item{
     width: 40vw;
+}
+.sectionContact h3{
+    font-size: 120px;
+}
+h2{
+    font-size: 120px;
 }
 }
