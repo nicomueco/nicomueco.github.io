@@ -93,6 +93,10 @@ h1{
     animation-timing-function: linear;
     transform-origin: center;
 }
+@keyframes beatheart {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+  }
 .botton-section-02{
     width: 100px;
     height: 100px;
@@ -490,12 +494,6 @@ footer p{
         animation-timing-function: linear;
         transform-origin: center;
     }
-    @keyframes beatheart {
-        from {height: 35px;
-            width: 35px;}
-        to {height: 30px;
-            width: 30px;}
-      }
       .section02{
         flex-direction: row;
         justify-content: space-between;
