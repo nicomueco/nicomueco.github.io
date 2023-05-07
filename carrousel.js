@@ -1,4 +1,4 @@
-let LearnPlaces = ["resources/studied/Udistrital.png", "resources/studied/Uandes.png", "resources/studied/Platzi.png"]
+let LearnPlaces = ["resources/studied/Unacional.png", "resources/studied/Udistrital.png", "resources/studied/Uandes.png"]
 let indice = 0
 function ChangeImage(){
     if (indice < 2) {

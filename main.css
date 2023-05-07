@@ -477,9 +477,9 @@ footer p{
         color: #BEB7A4;
     }
     .subtitle{
-        margin-top: 20px;
+        margin-top: 40px;
         font-size: 24px;
-        justify-content: center;
+        justify-content: left;
         text-align: left;
     }
     .subtitle img {
